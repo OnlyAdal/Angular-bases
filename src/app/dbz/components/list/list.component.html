@@ -12,6 +12,7 @@
 
   <div>
     <span class="text-primary"> {{i + 1}}. </span>
+    <span hidden>{{character.id}}</span>
     <span>{{character.name}} -</span>
     <strong> Power: </strong>
     <span>{{character.power}}</span>
@@ -23,7 +24,7 @@
   </div>
 
 
-  <button class="btn btn-danger" (click)="onDelteCharacter(i)">X</button>
+  <button class="btn btn-danger" (click)="onDelteCharacter(character.id)">X</button>
 
 </li>
 </ul>
